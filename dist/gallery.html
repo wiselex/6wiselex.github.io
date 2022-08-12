@@ -1,174 +1,330 @@
 <!DOCTYPE html>
 <html lang="ru">
-<head>
+	<head>
+		<meta charset="utf-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+		<meta name="viewport" content="width=device-width,initial-scale=1" />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap"
+			rel="stylesheet"
+		/>
+		<link
+			href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap"
+			rel="stylesheet"
+		/>
+		<link
+			href="https://fonts.googleapis.com/css2?family=Saira:wght@400;500;700&display=swap"
+			rel="stylesheet"
+		/>
+		<link
+			rel="stylesheet"
+			href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
+		/>
+		<script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+		<title>Gallery</title>
 
-	<meta charset="utf-8"/>
-	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
-	<meta name="viewport" content="width=device-width,initial-scale=1">
-   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
-   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap" rel="stylesheet">
-   <link href="https://fonts.googleapis.com/css2?family=Saira:wght@400;500;700&display=swap" rel="stylesheet">
-   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
-   <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
-	<title>Gallery</title>
-
-
-<link href="./assets/css/main.min.css?v=25bbb891cb8b9c0e479b" rel="stylesheet"></head>
-<body>
-
-	
+		<link href="./css/main.min.css?v=25bbb891cb8b9c0e479b" rel="stylesheet" />
+	</head>
+	<body>
 		<div class="wrapper2">
-   <header class="header2">
-      <div class="container">
-         <div class="header2-flex">
-            <a href="kit.html"><img class="logo2" src="./assets/img/logo.svg" alt="logotype" width="84.63" height="36"></a>
-            <div>
-               <a href="gallery.html" class="header-links2 monts e--gallery-link1">Gallery</a>
-               <a href="prices.html" class="header-links2 monts pdb2 ">Prices for services</a>
-               <a href="about_us.html" class="header-links2 monts pdr2">About us</a>
-               <a href="contact.html" class="header-links2 monts last-pdr2">Contact</a>
-            </div>
-            <button alt="button menu" type="button" class="transparent dis-none2">
-               <a href="#" class="menu2"><img src="./assets/img/menu.svg" alt="button"></a>
-            </button>
-         </div>
-      </div>
-   </header>
-</div>
-	
+			<header class="header2">
+				<div class="container">
+					<div class="header2-flex">
+						<a href="kit.html"
+							><img
+								class="logo2"
+								src="./img/logo.svg"
+								alt="logotype"
+								width="84.63"
+								height="36"
+						/></a>
+						<div>
+							<a
+								href="gallery.html"
+								class="header-links2 monts e--gallery-link1"
+								>Gallery</a
+							>
+							<a href="prices.html" class="header-links2 monts pdb2"
+								>Prices for services</a
+							>
+							<a href="about_us.html" class="header-links2 monts pdr2"
+								>About us</a
+							>
+							<a href="contact.html" class="header-links2 monts last-pdr2"
+								>Contact</a
+							>
+						</div>
+						<button
+							alt="button menu"
+							type="button"
+							class="transparent dis-none2"
+						>
+							<a href="#" class="menu2"
+								><img src="./img/menu.svg" alt="button"
+							/></a>
+						</button>
+					</div>
+				</div>
+			</header>
+		</div>
 
-	
-<div class="wrapper">
-   <section class="block_2">
-      <div class="container">
-         <h2 class="kyiv e--block2_h2 e--gallery-h2">Our work</h2>
-         <div class="swiper mySwiper">
-            <div class="swiper-wrapper">
-               <div class="swiper-slide e--small_1">
-                  <picture>
-                     <img src="./assets/img/kitchen.webp" alt="" srcset="./assets/img/kitchen.webp 1x, /assets/img/kitchen@2x.webp 2x">
-                  </picture>
-               </div>
-               <div class="swiper-slide e--small_2">
-                  <picture>
-                     <img src="./assets/img/kitchen.webp" alt="" srcset="./assets/img/kitchen.webp 1x, /assets/img/kitchen@2x.webp 2x">
-                  </picture>
-               </div>
-               <div class="swiper-slide e--small_3">
-                  <picture>
-                     <img src="./assets/img/kitchen.webp" alt="" srcset="./assets/img/kitchen.webp 1x, /assets/img/kitchen@2x.webp 2x">
-                  </picture>
-               </div>
-            </div>
-            <div class="swiper-button-next"></div>
-            <div class="swiper-button-prev"></div>
-            <div class="swiper-pagination"></div>
-         </div>
-      </div>
-   </section>
-   <section class="block-1">
-      <div class="container">
-         <h1 class="kyiv block-1_h1 e--gallery-h1">THE WOOD WE WORK WITH</h1>
-      </div>
-      <div class="flex-block1">
-         <div class="left-side">
-            <img class="mg0 e--wid" src="./assets/img/block1-img1.webp" alt="" width="90" height="90">
-            <h2 class="inter e--h2_block1 tac">Oak</h2>
-            <ul>
-               <li>
-                  <img class="liknon e--width e--block1_mg1" src="./assets/img/like.svg" alt="" width="13" height="13">
-                  <span class="inter e--span1_block1 pd9">Durability</span>
-               </li>
-               <li>
-                  <img class="liknon e--width e--block1_mg1 layo1" src="./assets/img/like.svg" alt="" width="13" height="13">
-                  <span class="inter e--span_block1 layo">Beautiful texture</span>
-               </li>
-               <li>
-                  <img class="liknon e--width  e--block1_mg2" src="./assets/img/like.svg" alt="" width="13" height="13">
-                  <span class="inter e--span_block1 e--spanp2 pdb26">Water resistance</span>
-               </li>
-               <li>
-                  <img class="liknon e--width1 e--block1_mg3" src="./assets/img/none.svg" alt="" width="10" height="10">
-                  <span class="inter e--span_block1 e--spanp2 pd23">Expensive</span>
-               </li>
-            </ul>
-         </div>
-         <div class="center">
-            <img class="mg0 e--wid" src="./assets/img/block1-img2.webp" alt="" width="90" height="90">
-            <h2 class="inter e--h2_block1 tac1">Buk</h2>
-            <ul>
-               <li>
-                  <img class="liknon e--width e--block1_mg4" src="./assets/img/like.svg" alt="" width="13" height="13">
-                  <span class="inter e--span1_block1">Durability</span>
-               </li>
-               <li>
-                  <img class="liknon e--width1 e--block1_mg5" src="./assets/img/none.svg" alt="" width="10" height="10">
-                  <span class="inter e--span_block1">Hard to handle</span>
-               </li>
-            </ul>
-         </div>
-         <div class="right-side">
-            <img class="mg0 e--wid" src="./assets/img/block1-img3.webp" alt="" width="90" height="90">
-            <h2 class="inter e--h2_block1 tac1">Ash</h2>
-            <ul>
-               <li>
-                  <img class="liknon e--width e--block1_mg6" src="./assets/img/like.svg" alt="" width="13" height="13">
-                  <span class="inter e--span1_block1">Durability</span>
-               </li>
-               <li>
-                  <img class="liknon e--width1 e--block1_mg7" src="./assets/img/none.svg" alt="" width="10" height="10">
-                  <span class="inter e--span_block1">Hard to handle</span>
-               </li>
-            </ul>
-         </div>
-      </div>
-   </section>
-   <section class="block_5">
-      <div class="container">
-         <h2 class="kyiv e--block5_h2 e--galery-bl5-h2">Any questions?</h2>
-         <div class="flex-block5">
-            <div>
-               <form action="#" class="e--galery-form">
-                  <input type="text" class="inter input e--block5_name e--galery-name" name="fname" placeholder="Your name"/>
-                  <br />
-                  <input type="tel" class="inter input e--block5_number e--galery-number" name="fname" placeholder="Your telephone number"/>
-                  <br />
-                  <input type="text" class="inter input e--block5_question e--galery-question" name="fname" placeholder="Your question"/>
-                  <br />
-                  <input type="submit" class="inter e--block5_send e--galery-send" value="Send" />
-               </form>
-            </div>
-            <p class="inter e--block5_p e--galery-p">Write to us and we will be sure to answer all your questions and give you a comprehensive consultation.</p>
-         </div>
-      </div>
-   </section>
-</div>
+		<div class="wrapper">
+			<section class="block_2">
+				<div class="container">
+					<h2 class="kyiv e--block2_h2 e--gallery-h2">Our work</h2>
+					<div class="swiper mySwiper">
+						<div class="swiper-wrapper">
+							<div class="swiper-slide e--small_1">
+								<picture>
+									<img
+										src="./img/kitchen.webp"
+										alt=""
+										srcset="./img/kitchen.webp 1x, /img/kitchen@2x.webp 2x"
+									/>
+								</picture>
+							</div>
+							<div class="swiper-slide e--small_2">
+								<picture>
+									<img
+										src="./img/kitchen.webp"
+										alt=""
+										srcset="./img/kitchen.webp 1x, /img/kitchen@2x.webp 2x"
+									/>
+								</picture>
+							</div>
+							<div class="swiper-slide e--small_3">
+								<picture>
+									<img
+										src="./img/kitchen.webp"
+										alt=""
+										srcset="./img/kitchen.webp 1x, /img/kitchen@2x.webp 2x"
+									/>
+								</picture>
+							</div>
+						</div>
+						<div class="swiper-button-next"></div>
+						<div class="swiper-button-prev"></div>
+						<div class="swiper-pagination"></div>
+					</div>
+				</div>
+			</section>
+			<section class="block-1">
+				<div class="container">
+					<h1 class="kyiv block-1_h1 e--gallery-h1">THE WOOD WE WORK WITH</h1>
+				</div>
+				<div class="flex-block1">
+					<div class="left-side">
+						<img
+							class="mg0 e--wid"
+							src="./img/block1-img1.webp"
+							alt=""
+							width="90"
+							height="90"
+						/>
+						<h2 class="inter e--h2_block1 tac">Oak</h2>
+						<ul>
+							<li>
+								<img
+									class="liknon e--width e--block1_mg1"
+									src="./img/like.svg"
+									alt=""
+									width="13"
+									height="13"
+								/>
+								<span class="inter e--span1_block1 pd9">Durability</span>
+							</li>
+							<li>
+								<img
+									class="liknon e--width e--block1_mg1 layo1"
+									src="./img/like.svg"
+									alt=""
+									width="13"
+									height="13"
+								/>
+								<span class="inter e--span_block1 layo">Beautiful texture</span>
+							</li>
+							<li>
+								<img
+									class="liknon e--width e--block1_mg2"
+									src="./img/like.svg"
+									alt=""
+									width="13"
+									height="13"
+								/>
+								<span class="inter e--span_block1 e--spanp2 pdb26"
+									>Water resistance</span
+								>
+							</li>
+							<li>
+								<img
+									class="liknon e--width1 e--block1_mg3"
+									src="./img/none.svg"
+									alt=""
+									width="10"
+									height="10"
+								/>
+								<span class="inter e--span_block1 e--spanp2 pd23"
+									>Expensive</span
+								>
+							</li>
+						</ul>
+					</div>
+					<div class="center">
+						<img
+							class="mg0 e--wid"
+							src="./img/block1-img2.webp"
+							alt=""
+							width="90"
+							height="90"
+						/>
+						<h2 class="inter e--h2_block1 tac1">Buk</h2>
+						<ul>
+							<li>
+								<img
+									class="liknon e--width e--block1_mg4"
+									src="./img/like.svg"
+									alt=""
+									width="13"
+									height="13"
+								/>
+								<span class="inter e--span1_block1">Durability</span>
+							</li>
+							<li>
+								<img
+									class="liknon e--width1 e--block1_mg5"
+									src="./img/none.svg"
+									alt=""
+									width="10"
+									height="10"
+								/>
+								<span class="inter e--span_block1">Hard to handle</span>
+							</li>
+						</ul>
+					</div>
+					<div class="right-side">
+						<img
+							class="mg0 e--wid"
+							src="./img/block1-img3.webp"
+							alt=""
+							width="90"
+							height="90"
+						/>
+						<h2 class="inter e--h2_block1 tac1">Ash</h2>
+						<ul>
+							<li>
+								<img
+									class="liknon e--width e--block1_mg6"
+									src="./img/like.svg"
+									alt=""
+									width="13"
+									height="13"
+								/>
+								<span class="inter e--span1_block1">Durability</span>
+							</li>
+							<li>
+								<img
+									class="liknon e--width1 e--block1_mg7"
+									src="./img/none.svg"
+									alt=""
+									width="10"
+									height="10"
+								/>
+								<span class="inter e--span_block1">Hard to handle</span>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</section>
+			<section class="block_5">
+				<div class="container">
+					<h2 class="kyiv e--block5_h2 e--galery-bl5-h2">Any questions?</h2>
+					<div class="flex-block5">
+						<div>
+							<form action="#" class="e--galery-form">
+								<input
+									type="text"
+									class="inter input e--block5_name e--galery-name"
+									name="fname"
+									placeholder="Your name"
+								/>
+								<br />
+								<input
+									type="tel"
+									class="inter input e--block5_number e--galery-number"
+									name="fname"
+									placeholder="Your telephone number"
+								/>
+								<br />
+								<input
+									type="text"
+									class="inter input e--block5_question e--galery-question"
+									name="fname"
+									placeholder="Your question"
+								/>
+								<br />
+								<input
+									type="submit"
+									class="inter e--block5_send e--galery-send"
+									value="Send"
+								/>
+							</form>
+						</div>
+						<p class="inter e--block5_p e--galery-p">
+							Write to us and we will be sure to answer all your questions and
+							give you a comprehensive consultation.
+						</p>
+					</div>
+				</div>
+			</section>
+		</div>
 
-
-	
 		<footer class="last_block">
-      <div class="container e--footer">
-         <div class="flex_footer">
-            <img class="footer_logo" src="./assets/img/logo.svg" alt="" width="162" height="70">
-            <div class="e--footer_block1">
-               <img class="footer_geo" src="./assets/img/geo.svg" alt="" width="24" height="24">
-               <a class="monts links e--footer_link1" href="#">Na Plzeňce 1166/1</a>
-               <br>
-               <a class="monts links e--footer_link2" href="#">Прага 5 - Смихов,</a>
-               <span class="e--footer_span">150 00</span>
-            </div>
-            <div class="e--footer_block2">
-               <img class="footer_call" src="./assets/img/call.svg" alt="" width="24" height="24">
-               <a class="monts links e--footer_link3" href="#">+420 000 000 000</a>
-            </div>
-         </div>
-         <a class="saira e--footer_link4" href="kit.html">Политика конфиденциальности</a>
-         <a class="inter e--footer_link5" href="kit.html">Privacy Policy</a>
-      </div>
-</footer>
+			<div class="container e--footer">
+				<div class="flex_footer">
+					<img
+						class="footer_logo"
+						src="./img/logo.svg"
+						alt=""
+						width="162"
+						height="70"
+					/>
+					<div class="e--footer_block1">
+						<img
+							class="footer_geo"
+							src="./img/geo.svg"
+							alt=""
+							width="24"
+							height="24"
+						/>
+						<a class="monts links e--footer_link1" href="#"
+							>Na Plzeňce 1166/1</a
+						>
+						<br />
+						<a class="monts links e--footer_link2" href="#"
+							>Прага 5 - Смихов,</a
+						>
+						<span class="e--footer_span">150 00</span>
+					</div>
+					<div class="e--footer_block2">
+						<img
+							class="footer_call"
+							src="./img/call.svg"
+							alt=""
+							width="24"
+							height="24"
+						/>
+						<a class="monts links e--footer_link3" href="#">+420 000 000 000</a>
+					</div>
+				</div>
+				<a class="saira e--footer_link4" href="kit.html"
+					>Политика конфиденциальности</a
+				>
+				<a class="inter e--footer_link5" href="kit.html">Privacy Policy</a>
+			</div>
+		</footer>
 
-	
-
-<script src="./assets/js/main.js"></script>
-<script defer src="./assets/js/vendor.min.js?v=85a4366738e33aed9ba0"></script><script defer src="./assets/js/main.min.js?v=25bbb891cb8b9c0e479b"></script></body>
+		<script src="./js/main.js"></script>
+		<script defer src="./js/vendor.min.js?v=85a4366738e33aed9ba0"></script>
+		<script defer src="./js/main.min.js?v=25bbb891cb8b9c0e479b"></script>
+	</body>
 </html>

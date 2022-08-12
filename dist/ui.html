@@ -1,138 +1,276 @@
 <!DOCTYPE html>
 <html lang="ru">
-<head>
+	<head>
+		<meta charset="utf-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+		<meta name="viewport" content="width=device-width,initial-scale=1" />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap"
+			rel="stylesheet"
+		/>
+		<link
+			href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap"
+			rel="stylesheet"
+		/>
+		<link
+			href="https://fonts.googleapis.com/css2?family=Saira:wght@400;500;700&display=swap"
+			rel="stylesheet"
+		/>
+		<link
+			rel="stylesheet"
+			href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
+		/>
+		<script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+		<title>Список ссылок на страницы</title>
 
-	<meta charset="utf-8"/>
-	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
-	<meta name="viewport" content="width=device-width,initial-scale=1">
-   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
-   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap" rel="stylesheet">
-   <link href="https://fonts.googleapis.com/css2?family=Saira:wght@400;500;700&display=swap" rel="stylesheet">
-   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
-   <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
-	<title>Список ссылок на страницы</title>
-
-
-<link href="./assets/css/main.min.css?v=25bbb891cb8b9c0e479b" rel="stylesheet"></head>
-<body>
-
-	
+		<link href="./css/main.min.css?v=25bbb891cb8b9c0e479b" rel="stylesheet" />
+	</head>
+	<body>
 		<div class="wrapper">
-   <header class="header">
-      <div class="container">
-         <div class="header-flex">
-            <a href="kit.html"><img class="logo" src="./assets/img/logo.svg" alt="logotype" width="84.63" height="36"></a>
-            <div>
-               <a href="gallery.html" class="header-links monts">Gallery</a>
-               <a href="prices.html" class="header-links monts pdb">Prices for services</a>
-               <a href="about_us.html" class="header-links monts pdr">About us</a>
-               <a href="contact.html" class="header-links monts last-pdr">Contact</a>
-            </div>
-            <button alt="button menu" type="button" class="transparent dis-none">
-               <a href="#" class="menu"><img src="./assets/img/menu.svg" alt="button"></a>
-            </button>
-         </div>
-      </div>
-      <div class="bor-bt"></div>
-      <div class="block1-flex">
-         <div>
-            <h2 class="kyiv header-h2 ">Solid wood products</h2>
-            <p class="inter header-p">Oak, beech, ash from 1700 CZK per m3</p>
-            <button class="transparent e--but">
-               <a href="#" class="inter but-text">Order</a>
-            </button>
-         </div>
-         <div>
-            <img src="./assets/img/header_image_1.webp" class="e--block mg1" alt="" width="90" height="">
-            <img src="./assets/img/header_image_2.webp" class="e--block mg2" alt="" width="90" height="">
-            <img src="./assets/img/header_image_3.webp" class="e--block mg3" alt="" width="90" height="">
-         </div>
-      </div> 
-   </header>
-</div>
+			<header class="header">
+				<div class="container">
+					<div class="header-flex">
+						<a href="kit.html"
+							><img
+								class="logo"
+								src="./img/logo.svg"
+								alt="logotype"
+								width="84.63"
+								height="36"
+						/></a>
+						<div>
+							<a href="gallery.html" class="header-links monts">Gallery</a>
+							<a href="prices.html" class="header-links monts pdb"
+								>Prices for services</a
+							>
+							<a href="about_us.html" class="header-links monts pdr"
+								>About us</a
+							>
+							<a href="contact.html" class="header-links monts last-pdr"
+								>Contact</a
+							>
+						</div>
+						<button
+							alt="button menu"
+							type="button"
+							class="transparent dis-none"
+						>
+							<a href="#" class="menu"
+								><img src="./img/menu.svg" alt="button"
+							/></a>
+						</button>
+					</div>
+				</div>
+				<div class="bor-bt"></div>
+				<div class="block1-flex">
+					<div>
+						<h2 class="kyiv header-h2">Solid wood products</h2>
+						<p class="inter header-p">Oak, beech, ash from 1700 CZK per m3</p>
+						<button class="transparent e--but">
+							<a href="#" class="inter but-text">Order</a>
+						</button>
+					</div>
+					<div>
+						<img
+							src="./img/header_image_1.webp"
+							class="e--block mg1"
+							alt=""
+							width="90"
+							height=""
+						/>
+						<img
+							src="./img/header_image_2.webp"
+							class="e--block mg2"
+							alt=""
+							width="90"
+							height=""
+						/>
+						<img
+							src="./img/header_image_3.webp"
+							class="e--block mg3"
+							alt=""
+							width="90"
+							height=""
+						/>
+					</div>
+				</div>
+			</header>
+		</div>
 
-	
+		<div class="container mb-5">
+			<div class="row">
+				<div class="col-12">
+					<div class="h4 my-4" style="opacity: 0.5">Всего страниц: 7</div>
+				</div>
+				<div class="col-12">
+					<div class="list-group">
+						<a
+							class="list-group-item list-group-item-action d-lg-flex justify-content-between align-items-center js-link-group"
+							href="404.html"
+							target="_blank"
+							><div>404 - страница не найдена</div>
+							<code class="d-inline-block badge text-danger bg-light"
+								>404.html</code
+							></a
+						>
 
-	
-	<div class="container mb-5">
-		<div class="row">
-			<div class="col-12">
-				<div class="h4 my-4" style="opacity: .5;">Всего страниц: 7</div>
-			</div>
-			<div class="col-12">
-				<div class="list-group">
-				
-					<a class="list-group-item list-group-item-action d-lg-flex justify-content-between align-items-center js-link-group" href="404.html" target="_blank"><div>404 - страница не найдена</div><code class="d-inline-block badge text-danger bg-light">404.html</code></a>
-				
-					<a class="list-group-item list-group-item-action d-lg-flex justify-content-between align-items-center js-link-group" href="about_us.html" target="_blank"><div>About us</div><code class="d-inline-block badge text-danger bg-light">about_us.html</code></a>
-				
-					<a class="list-group-item list-group-item-action d-lg-flex justify-content-between align-items-center js-link-group" href="contact.html" target="_blank"><div>Contact</div><code class="d-inline-block badge text-danger bg-light">contact.html</code></a>
-				
-					<a class="list-group-item list-group-item-action d-lg-flex justify-content-between align-items-center js-link-group" href="gallery.html" target="_blank"><div>Gallery</div><code class="d-inline-block badge text-danger bg-light">gallery.html</code></a>
-				
-					<a class="list-group-item list-group-item-action d-lg-flex justify-content-between align-items-center js-link-group" href="index.html" target="_blank"><div>PEPELAC</div><code class="d-inline-block badge text-danger bg-light">index.html</code></a>
-				
-					<a class="list-group-item list-group-item-action d-lg-flex justify-content-between align-items-center js-link-group" href="kit.html" target="_blank"><div>Main</div><code class="d-inline-block badge text-danger bg-light">kit.html</code></a>
-				
-					<a class="list-group-item list-group-item-action d-lg-flex justify-content-between align-items-center js-link-group" href="prices.html" target="_blank"><div>Prices for services</div><code class="d-inline-block badge text-danger bg-light">prices.html</code></a>
-				
+						<a
+							class="list-group-item list-group-item-action d-lg-flex justify-content-between align-items-center js-link-group"
+							href="about_us.html"
+							target="_blank"
+							><div>About us</div>
+							<code class="d-inline-block badge text-danger bg-light"
+								>about_us.html</code
+							></a
+						>
+
+						<a
+							class="list-group-item list-group-item-action d-lg-flex justify-content-between align-items-center js-link-group"
+							href="contact.html"
+							target="_blank"
+							><div>Contact</div>
+							<code class="d-inline-block badge text-danger bg-light"
+								>contact.html</code
+							></a
+						>
+
+						<a
+							class="list-group-item list-group-item-action d-lg-flex justify-content-between align-items-center js-link-group"
+							href="gallery.html"
+							target="_blank"
+							><div>Gallery</div>
+							<code class="d-inline-block badge text-danger bg-light"
+								>gallery.html</code
+							></a
+						>
+
+						<a
+							class="list-group-item list-group-item-action d-lg-flex justify-content-between align-items-center js-link-group"
+							href="index.html"
+							target="_blank"
+							><div>PEPELAC</div>
+							<code class="d-inline-block badge text-danger bg-light"
+								>index.html</code
+							></a
+						>
+
+						<a
+							class="list-group-item list-group-item-action d-lg-flex justify-content-between align-items-center js-link-group"
+							href="kit.html"
+							target="_blank"
+							><div>Main</div>
+							<code class="d-inline-block badge text-danger bg-light"
+								>kit.html</code
+							></a
+						>
+
+						<a
+							class="list-group-item list-group-item-action d-lg-flex justify-content-between align-items-center js-link-group"
+							href="prices.html"
+							target="_blank"
+							><div>Prices for services</div>
+							<code class="d-inline-block badge text-danger bg-light"
+								>prices.html</code
+							></a
+						>
+					</div>
+				</div>
+				<div class="col-12 mt-5">
+					<div>
+						<button id="download-list" class="btn btn-outline-success">
+							Скачать список страниц
+						</button>
+					</div>
 				</div>
 			</div>
-			<div class="col-12 mt-5">
-				<div><button id="download-list" class="btn btn-outline-success">Скачать список страниц</button></div>
-			</div>
 		</div>
-	</div>
-	
-	<script>
-		/** Скачивание файла */
-		function download(text, filename, type = "text/plain"){
-			const blob = new Blob([text], {type});
-			const url = window.URL.createObjectURL(blob);
-			const a = document.createElement("a");
-			a.href = url;
-			a.download = filename;
-			a.click();
-		}
 
-		const listHtml = [{"url":"404.html","title":"404 - страница не найдена"},{"url":"about_us.html","title":"About us"},{"url":"contact.html","title":"Contact"},{"url":"gallery.html","title":"Gallery"},{"url":"index.html","title":"PEPELAC"},{"url":"kit.html","title":"Main"},{"url":"prices.html","title":"Prices for services"}];
-		const contentLinks = listHtml.map(i => `${i.title} - ${i.url}`).join('\n');
+		<script>
+			/** Скачивание файла */
+			function download(text, filename, type = "text/plain") {
+				const blob = new Blob([text], { type });
+				const url = window.URL.createObjectURL(blob);
+				const a = document.createElement("a");
+				a.href = url;
+				a.download = filename;
+				a.click();
+			}
 
+			const listHtml = [
+				{ url: "404.html", title: "404 - страница не найдена" },
+				{ url: "about_us.html", title: "About us" },
+				{ url: "contact.html", title: "Contact" },
+				{ url: "gallery.html", title: "Gallery" },
+				{ url: "index.html", title: "PEPELAC" },
+				{ url: "kit.html", title: "Main" },
+				{ url: "prices.html", title: "Prices for services" },
+			];
+			const contentLinks = listHtml
+				.map((i) => `${i.title} - ${i.url}`)
+				.join("\n");
 
-		/** Пометка ссылок на которые был переход */
-		document.querySelectorAll('.js-link-group').forEach(link => link.addEventListener('click', function() { this.classList.add('active') }))
+			/** Пометка ссылок на которые был переход */
+			document.querySelectorAll(".js-link-group").forEach((link) =>
+				link.addEventListener("click", function () {
+					this.classList.add("active");
+				})
+			);
 
-		/** Событие скачивание списка страниц */
-		document.getElementById('download-list').addEventListener('click', function() {
-			download(contentLinks, 'Список страниц сайта.txt')
-		})
-	</script>
+			/** Событие скачивание списка страниц */
+			document
+				.getElementById("download-list")
+				.addEventListener("click", function () {
+					download(contentLinks, "Список страниц сайта.txt");
+				});
+		</script>
 
-
-	
 		<footer class="last_block">
-      <div class="container e--footer">
-         <div class="flex_footer">
-            <img class="footer_logo" src="./assets/img/logo.svg" alt="" width="162" height="70">
-            <div class="e--footer_block1">
-               <img class="footer_geo" src="./assets/img/geo.svg" alt="" width="24" height="24">
-               <a class="monts links e--footer_link1" href="#">Na Plzeňce 1166/1</a>
-               <br>
-               <a class="monts links e--footer_link2" href="#">Прага 5 - Смихов,</a>
-               <span class="e--footer_span">150 00</span>
-            </div>
-            <div class="e--footer_block2">
-               <img class="footer_call" src="./assets/img/call.svg" alt="" width="24" height="24">
-               <a class="monts links e--footer_link3" href="#">+420 000 000 000</a>
-            </div>
-         </div>
-         <a class="saira e--footer_link4" href="kit.html">Политика конфиденциальности</a>
-         <a class="inter e--footer_link5" href="kit.html">Privacy Policy</a>
-      </div>
-</footer>
+			<div class="container e--footer">
+				<div class="flex_footer">
+					<img
+						class="footer_logo"
+						src="./img/logo.svg"
+						alt=""
+						width="162"
+						height="70"
+					/>
+					<div class="e--footer_block1">
+						<img
+							class="footer_geo"
+							src="./img/geo.svg"
+							alt=""
+							width="24"
+							height="24"
+						/>
+						<a class="monts links e--footer_link1" href="#"
+							>Na Plzeňce 1166/1</a
+						>
+						<br />
+						<a class="monts links e--footer_link2" href="#"
+							>Прага 5 - Смихов,</a
+						>
+						<span class="e--footer_span">150 00</span>
+					</div>
+					<div class="e--footer_block2">
+						<img
+							class="footer_call"
+							src="./img/call.svg"
+							alt=""
+							width="24"
+							height="24"
+						/>
+						<a class="monts links e--footer_link3" href="#">+420 000 000 000</a>
+					</div>
+				</div>
+				<a class="saira e--footer_link4" href="kit.html"
+					>Политика конфиденциальности</a
+				>
+				<a class="inter e--footer_link5" href="kit.html">Privacy Policy</a>
+			</div>
+		</footer>
 
-	
-
-<script src="./assets/js/main.js"></script>
-<script defer src="./assets/js/vendor.min.js?v=85a4366738e33aed9ba0"></script><script defer src="./assets/js/main.min.js?v=25bbb891cb8b9c0e479b"></script></body>
+		<script src="./js/main.js"></script>
+		<script defer src="./js/vendor.min.js?v=85a4366738e33aed9ba0"></script>
+		<script defer src="./js/main.min.js?v=25bbb891cb8b9c0e479b"></script>
+	</body>
 </html>
