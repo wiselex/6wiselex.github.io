@@ -1,0 +1,30 @@
+{% extends "layout/base6.twig" %}
+
+{% set title = "404 - страница не найдена" %}
+
+{% block page %}
+<div class="wrapper2">
+   <header class="header-404">
+      <div class="container">
+         <div class="header-404-flex">
+            <a href="kit.html"><img class="logo-404" src="/assets/img/logo.svg" alt="logotype" width="84.63" height="36"></a>
+         <div>
+               <a href="gallery.html" class="header-links404 monts">Gallery</a>
+               <a href="prices.html" class="header-links404 monts pdb404">Prices for services</a>
+               <a href="about_us.html" class="header-links404 monts pdr404">About us</a>
+               <a href="contact.html" class="header-links404 monts last-pdr404">Contact</a>
+         </div>
+            <button alt="button menu" type="button" class="transparent dis-none">
+               <a href="kit.html" class="menu404"><img src="/assets/img/menu.svg" alt="button"></a>
+            </button>
+         </div>
+            <img class="e--404-mistake" src="/assets/img/mistake.svg" alt="">
+            <h2 class="e--404-h2 kyiv">Woops</h2>
+            <p class="e--404-p inter">Oh, you must be lost, there is no such page.</p>
+            <button type="button" class="e--404-but">
+               <a class="e--404-link inter" href="#">Go to the home page</a>
+            </button>
+      </div>
+   </header>
+</div>
+{% endblock %}

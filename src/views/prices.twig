@@ -1,0 +1,54 @@
+{% extends "layout/base3.twig" %}
+
+{% set title = "Prices for services" %}
+
+{% block content %}
+<div class="wrapper2">
+   <section class="block-list">
+      <div class="container">
+         <h2 class="kyiv e--price">Price List</h2>
+         <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+               <div class="swiper-slide e--small_11">
+                  <picture>
+                     <img src="/assets/img/price.webp" alt="" srcset="/assets/img/price.webp 1x, /assets/img/price@2x.webp 2x">
+                  </picture>
+               </div>
+               <div class="swiper-slide e--small_21">
+                  <picture>
+                     <img src="/assets/img/price.webp" alt="" srcset="/assets/img/price.webp 1x, /assets/img/price@2x.webp 2x">
+                  </picture>
+               </div>
+               <div class="swiper-slide e--small_31">
+                  <picture>
+                     <img src="/assets/img/price.webp" alt="" srcset="/assets/img/price.webp 1x, /assets/img/price@2x.webp 2x">
+                  </picture>
+               </div>
+            </div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-pagination e--prices-swiper"></div>
+         </div>
+      </div>
+   </section>
+   <section class="block_5">
+      <div class="container">
+         <h2 class="kyiv e--block5_h2 e--prices-h2">Any questions?</h2>
+         <div class="flex-block5">
+            <div>
+               <form action="#" class="e--prices-form">
+                  <input type="text" class="inter input e--block5_name e--galery-name" name="fname" placeholder="Your name"/>
+                  <br />
+                  <input type="tel" class="inter input e--block5_number e--galery-number" name="fname" placeholder="Your telephone number"/>
+                  <br />
+                  <input type="text" class="inter input e--block5_question e--galery-question" name="fname" placeholder="Your question"/>
+                  <br />
+                  <input type="submit" class="inter e--block5_send e--galery-send" value="Send" />
+               </form>
+            </div>
+            <p class="inter e--block5_p e--prices-p">Write to us and we will be sure to answer all your questions and give you a comprehensive consultation.</p>
+         </div>
+      </div>
+   </section>
+</div>
+{% endblock %}

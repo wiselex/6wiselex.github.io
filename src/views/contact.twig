@@ -1,0 +1,51 @@
+{% extends "layout/base5.twig" %}
+
+{% set title = "Contact" %}
+
+{% block content %}
+<div class="wrapper2">
+   <section class="contact">
+      <div class="container">
+         <div class="flex-contact">
+            <div>                  
+               <h2 class=" kyiv e--contact-h2">Contact</h2>
+               <div class="e--contact_block2">
+                  <img class="contact_call" src="/assets/img/call.svg" alt="" width="32" height="32">
+                  <a class="monts links1 e--contact_link3" href="#">+420 000 000 000</a>
+               </div>
+               <div class="e--contact_block1">
+                  <img class="contact_geo" src="/assets/img/geo.svg" alt="" width="32" height="32">
+                  <a class="monts links1 e--contact_link1" href="#">Na Plzeňce 1166/1</a>
+                  <br>
+                  <span class="e--contact_span">150 00</span>
+               </div>
+            </div>
+            <div>
+               <iframe class="e--contact-frame" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5120.168985917503!2d14.346923046962083!3d50.084704915036355!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x470b957c2e7c028b%3A0x37aec6e00b6a7e53!2zQnJ1bmNsw61rb3ZhLCAxNjIgMDAgUHJhaGEgNiwg0KfQtdGF0LjRjw!5e0!3m2!1sru!2sfr!4v1660317280785!5m2!1sru!2sfr"
+               width="493" height="428" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+               </iframe>
+            </div>
+         </div>
+      </div>
+   </section>
+   <section class="block_5 e--contact-section">
+      <div class="container">
+         <h2 class="kyiv e--block5_h2 e--contact-bl5-h2">Any questions?</h2>
+         <div class="flex-block5">
+            <div>
+               <form action="#" class="e--contact-form">
+                  <input type="text" class="inter input e--block5_name e--contact-name" name="fname" placeholder="Your name"/>
+                  <br />
+                  <input type="tel" class="inter input e--block5_number e--contact-number" name="fname" placeholder="Your telephone number"/>
+                  <br />
+                  <input type="text" class="inter input e--block5_question e--contact-question" name="fname" placeholder="Your question"/>
+                  <br />
+                  <input type="submit" class="inter e--block5_send e--contact-send" value="Send" />
+               </form>
+            </div>
+            <p class="inter e--block5_p e--contact-p">Write to us and we will be sure to answer all your questions and give you a comprehensive consultation.</p>
+         </div>
+      </div>
+   </section>
+</div>
+{% endblock %}
